@@ -9,8 +9,8 @@ const auth = new google.auth.GoogleAuth({
   scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
 });
 
-const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID || '1jf-g8Cd82ct5WQoXo4kqFdJPfKCCxZ7M0hZPpHfL2s4';
-const range = 'main!A1:O';
+const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID || '1PoNYC6E2gaebProqvGsz7_hX7dAlld4Mh_YoCyomD48';
+const range = 'Web-08-2025!A1:K';
 
 const getGoogleSheetsInstance = async () => {
   const client = await auth.getClient();
